@@ -1,0 +1,11 @@
+{
+  "rewrites": [
+    { "source": "/api/vendor/status", "destination": "/api/status" },
+    { "source": "/api/vendor/toggle-lock", "destination": "/api/toggle-lock" },
+    { "source": "/api/vendor/toggle-device", "destination": "/api/toggle-device" },
+    { "source": "/api/vendor/delete-device", "destination": "/api/delete-device" },
+    { "source": "/api/vendor/customers", "destination": "/api/customers" },
+    { "source": "/api/(.*)", "destination": "/api/$1" },
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
